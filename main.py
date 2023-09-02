@@ -8,7 +8,7 @@ def main():
     
      
 
-def nlp(input_selection):
+def nlp():
     #global input_selection
     try:
         selection="""
