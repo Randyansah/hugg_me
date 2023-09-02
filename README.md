@@ -1,12 +1,12 @@
 NATURAL LANGUAGE PROCESSING APP
 
-##INTRODUCTION
+## INTRODUCTION
 
 Hugging Face is an application to do some NATURAL LANGUAGE PROCESSING tasks such as summarization, translation, text generation, text vector extration, answering questions etc
 
 
 
-##OVERVIEW
+## OVERVIEW
 
 This app is still under development and a web interface will be added soon
 
@@ -30,7 +30,7 @@ This app is still under development and a web interface will be added soon
 
         ANSWERING QUESTIONS
 
-        """
+        
 
 ## DEPENDENCIES
 
@@ -51,7 +51,7 @@ pip install gradio
 
 
 
-**MAIN FILES: Project Structure
+## MAIN FILES: Project Structure
 ```sh
 |--__pycache__
 |--.github/workflows
