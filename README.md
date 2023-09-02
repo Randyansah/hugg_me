@@ -32,29 +32,19 @@ Hugging Face allows users to build, train, and deploy art models using the refer
 **DEPENDENCIES
 
 **MAIN FILES: Project Structure
-
+```sh
 |--__pycache__
-
 |--.github/workflows
 
     |--main.yml
-
 |--flagged
-
 |--__init__.py
-
 |--app.py
-
 |--LICENSE.md
-
 |--main.py
-
 |--Makefile
-
 |--README.md
-
 |--requirements.txt
-
 |--setup.py
-
 |--test.py
+```
