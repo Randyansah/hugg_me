@@ -6,10 +6,13 @@ def main():
     print(x)
     
     
-     
+def input_select(a):
+     return a*3
+    
+         
+
 
 def nlp():
-    global input_selection
     try:
         selection="""
         WELCOME TO THE HUGGING FACE NLP SYSTEM
