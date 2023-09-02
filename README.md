@@ -1,11 +1,14 @@
 NATURAL LANGUAGE PROCESSING APP
 
-**INTRODUCTION
-Hugging Face allows users to build, train, and deploy art models using the reference open source in machine learning.
+##INTRODUCTION
+
+Hugging Face is an application to do some NATURAL LANGUAGE PROCESSING tasks such as summarization, translation, text generation, text vector extration, answering questions etc
 
 
 
-**OVERVIEW
+##OVERVIEW
+
+This app is still under development and a web interface will be added soon
 
     This app seeks to perform some nlp tasks:
 
@@ -29,7 +32,24 @@ Hugging Face allows users to build, train, and deploy art models using the refer
 
         """
 
-**DEPENDENCIES
+## DEPENDENCIES
+
+Installed dependencies are:
+* **viruallenv** as a tool to create virtual Python environments
+* **transformers** is a hugging face NLP dependency
+* **tensorflow** is an open source Machine learning platform managed by google
+* **gradio** is a machine learning web interface 
+You can download and install the dependencies mentioned above using `pip` as:
+
+```
+pip install transformers
+pip install tensorflow
+pip install gradio
+```
+
+
+
+
 
 **MAIN FILES: Project Structure
 ```sh
@@ -48,3 +68,6 @@ Hugging Face allows users to build, train, and deploy art models using the refer
 |--setup.py
 |--test.py
 ```
+
+### Author
+- Randy Kofi Ansah
