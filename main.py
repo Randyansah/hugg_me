@@ -9,7 +9,7 @@ def main():
      
 
 def nlp():
-    #global input_selection
+    global input_selection
     try:
         selection="""
         WELCOME TO THE HUGGING FACE NLP SYSTEM

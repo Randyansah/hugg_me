@@ -1,4 +1,4 @@
-from main import nlp
+from main import input_selection
 def test():
     input_selection=10
-    assert nlp(test.input_selection)==int
+    assert input_selection==int
