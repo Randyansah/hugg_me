@@ -1,4 +1,4 @@
 from main import start
 
 def test_start():
-    assert start()=='start'
+    assert start('start')=='start'
