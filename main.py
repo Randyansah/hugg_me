@@ -32,7 +32,7 @@ def input_select():
     return input_selection        
 
 def start():
-    print('start')    
+    return 'start'   
          
 
 
