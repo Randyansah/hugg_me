@@ -1,20 +1,9 @@
 from transformers import pipeline
 import tensorflow
+import argparse
 
 def main():
-    x=nlp()
-    print(x)
-    
-    
-def input_select(a):
-     return a*3
-    
-         
-
-
-def nlp():
-    try:
-        selection="""
+    selection="""
         WELCOME TO THE HUGGING FACE NLP SYSTEM
         1==PREDICT WHICH TOP IS DISCUSSED IN  A SENTENCE
         2==CLASSIFY WHETHER A SENTENCE IS POSITIVE OR NEGATIVE
@@ -27,9 +16,29 @@ def nlp():
         9==ANSWERING QUESTIONS
 
         """
+    print(selection)
+    input_select()
+    x=nlp()
+    print(x)
+    
+    
+def input_select():  
+    global input_selection  
+    try:
         input_selection=int(input('ENTER OPTION>>'))
+    except ValueError:
+            print('CHECK YOUR VALUE \n ENTER AN INTEGER')
+    
+         
+
+
+def nlp():
+
+    try :            
         txt=str(input('ENTER TEXT>>'))
-        match input_selection:
+    except ValueError:
+            print('CHECK VALUES')    
+    match input_selection:
                         case 1:
                             generator=pipeline('zero-shot-classification')
                             answer=generator(txt)
@@ -57,9 +66,16 @@ def nlp():
                         case 9:
                             generator=pipeline('question_answering')
                             answer=generator(txt)
-        return answer
-    except ValueError:
-            print('CHECK VALUES')
+    return answer
+    #except ValueError:
+            #print('CHECK VALUES')
+parser=argparse.ArgumentParser(description='Hugging Face is an \
+                               application to do some NATURAL LANGUAGE\
+                                PROCESSING tasks such as summarization, \
+                               translation, text generation, text vector \
+                               extration, answering questions etc')     
+parser.add_argument("--main",help="This will perform various tasks",action="store_true") 
+args=parser.parse_args()      
 
 if __name__=="__main__":
      main()
