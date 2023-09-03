@@ -73,16 +73,20 @@ def nlp():
     return answer
     #except ValueError:
             #print('CHECK VALUES')
-parser=argparse.ArgumentParser(description='Hugging Face is an \
-                               application to do some NATURAL LANGUAGE\
-                                PROCESSING tasks such as summarization, \
-                               translation, text generation, text vector \
-                               extration, answering questions etc')     
-parser.add_argument("--main",help="This will perform various tasks",action="store_true") 
-args=parser.parse_args()      
+def command_li():            
+    parser=argparse.ArgumentParser(description='Hugging Face is an \
+                               #application to do some NATURAL LANGUAGE\
+                                #PROCESSING tasks such as summarization, \
+                               #translation, text generation, text vector \
+                               #extration, answering questions etc')     
+    parser.add_argument("--main",help="This will perform various tasks",action="store_true") 
+    args=parser.parse_args()  
+if __name__=="__command_li__":
+    command_li
+             
 
 if __name__=="__main__":
-     main()
+    main()
 
                     
 
