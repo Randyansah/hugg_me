@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest --vv --cov=myrepolib test.py
+	python -m pytest --vv  test.py
 
 format:
 	black *.py
