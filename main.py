@@ -22,13 +22,17 @@ def main():
     print(x)
     
     
+    
 def input_select():  
     global input_selection  
     try:
         input_selection=int(input('ENTER OPTION>>'))
     except ValueError:
             print('CHECK YOUR VALUE \n ENTER AN INTEGER')
-    
+    return input_selection        
+
+def start():
+    print('start')    
          
 
 

@@ -1,3 +1,3 @@
-from main import input_select
+from main import start
 def test_input_select():
-    assert input_select()==int
+    assert start()=='start'
