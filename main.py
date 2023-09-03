@@ -32,7 +32,8 @@ def input_select():
     return input_selection        
 
 def start():
-    return 'start'   
+    st='start'
+    return st  
          
 
 

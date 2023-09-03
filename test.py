@@ -1,3 +1,4 @@
 from main import start
-def test_input_select():
+
+def test_start():
     assert start()=='start'
