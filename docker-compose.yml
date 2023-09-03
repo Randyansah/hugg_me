@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  huggingface:
+    image: huggingface
+    build:
+      context: .
+      dockerfile: ./Dockerfile
