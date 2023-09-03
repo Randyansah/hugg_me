@@ -1,4 +1,4 @@
-from main import start
+from main import add
 
-def test_start():
-    assert start('start')=='start'
+def test_add():
+    assert add(4)==5

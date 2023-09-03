@@ -31,8 +31,8 @@ def input_select():
             print('CHECK YOUR VALUE \n ENTER AN INTEGER')
     return input_selection        
 
-def start(st):
-    return st  
+def add(x):
+    return x + 1 
          
 
 
