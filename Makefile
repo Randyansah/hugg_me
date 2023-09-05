@@ -3,12 +3,15 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest --nbval test.py
+	python -m pytest -vv --cov=main test.py
 
 format:
 	black *.py
 
 lint:
-	pylint --disable=R,C main.py --main
+	pylint --disable=R,C main.py 
+
+deploy:
+	#echo "deploy goes here"
 
 all: install lint test

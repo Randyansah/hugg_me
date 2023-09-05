@@ -82,7 +82,7 @@ def command_li():
     parser.add_argument("--main",help="This will perform various tasks",action="store_true") 
     args=parser.parse_args()  
 if __name__=="__command_li__":
-    command_li
+    command_li()
              
 
 if __name__=="__main__":
