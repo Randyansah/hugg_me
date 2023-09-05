@@ -1,5 +1,4 @@
 from transformers import pipeline
-import tensorflow
 import argparse
 
 def main():
@@ -80,7 +79,9 @@ def command_li():
                                #translation, text generation, text vector \
                                #extration, answering questions etc')     
     parser.add_argument("--main",help="This will perform various tasks",action="store_true") 
-    args=parser.parse_args()  
+    args=parser.parse_args()
+    return args
+  
 if __name__=="__command_li__":
     command_li()
              
