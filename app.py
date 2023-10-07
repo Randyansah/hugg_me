@@ -1,3 +1,7 @@
 import gradio as gr
 from main import nlp
-app=gr.Interface(fn=nlp,inputs=([gr.Textbox(placeholder="SELECT AN OPTION"),gr.Textbox(placeholder="ENTER TEXT")]), outputs=gr.outputs.Textbox(label="Generated Text"))
+from main import selection
+app=gr.Interface(fn=nlp,inputs=[gr.Number(laceholder="SELECT AN NLP TASK"),gr.Textbox(placeholder="ENTER TEXT")],\
+                  outputs=["text"],title='HUGGING PHACE',\
+                    description=selection)
+app.launch()
